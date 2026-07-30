@@ -1,0 +1,16 @@
+import canonicalLaneMathlib.AdmissibleClass
+import MaterialsEngineeringElectronicMaterialsEngineeringTheorem.CrystallographyBridge
+import MaterialsEngineeringElectronicMaterialsEngineeringTheorem.PhaseDiagramBridge
+import MaterialsEngineeringElectronicMaterialsEngineeringTheorem.ElasticityBridge
+
+namespace HautevilleHouse
+namespace MaterialsEngineeringElectronicMaterialsEngineeringTheorem
+
+def ConstrainedMaterialsEngineeringClosure (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem constrained_materials_engineering_endgame (A : AdmissibleClass) : ConstrainedMaterialsEngineeringClosure A := by
+  exact And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end MaterialsEngineeringElectronicMaterialsEngineeringTheorem
+end HautevilleHouse
